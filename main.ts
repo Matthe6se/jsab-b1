@@ -7,9 +7,6 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     controller.moveSprite(cube_in_code, 100, 100)
 })
-pins.LED.onEvent(PinEvent.PulseHigh, function () {
-    light.showAnimation(light.rainbowAnimation, 500)
-})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     controller.moveSprite(cube_in_code, 100, 100)
 })
@@ -30,25 +27,8 @@ mp.onControllerEvent(ControllerEvent.Connected, function (player2) {
     )
     animation.runImageAnimation(
     mySprite,
-    [img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `],
-    500,
+    assets.animation`myAnim`,
+    200,
     false
     )
 })
@@ -57,7 +37,9 @@ let cube_in_code: Sprite = null
 scene.setBackgroundImage(assets.image`bextru`)
 scene.cameraFollowSprite(cube_in_code)
 mySprite = sprites.create(assets.image`myImage`, SpriteKind.Enemy)
+let mySprite2 = sprites.create(assets.image`myImage1`, SpriteKind.Enemy)
 cube_in_code = sprites.create(assets.image`cube`, SpriteKind.Player)
+let statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 MakeyMakey.setSimulatorKeymap(
 MakeyMakey.PlayerNumber.ONE,
 MakeyMakey.MakeyMakeyKey.UP,

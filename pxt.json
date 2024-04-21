@@ -8,7 +8,9 @@
         "animation": "*",
         "Makey Makey Keymappings": "github:joylabz/makeymakey-makecode-arcade-extension#1.0.3",
         "edge-connector": "*",
-        "color-coded-tilemap": "*"
+        "color-coded-tilemap": "*",
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
+        "arcade-character-animations": "github:microsoft/arcade-character-animations#v0.0.2"
     },
     "files": [
         "main.blocks",

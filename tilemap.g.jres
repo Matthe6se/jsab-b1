@@ -4,6 +4,12 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile1": {
+        "data": "hwQQABAAAAD//x+q+q/68RERoaoaofrxHxGhqhqqH/GvGqoaGqof/6/6qvoa+hH/H6qhGqoaEf8fqhGhoRoR/x+qGqGq/xH/H6r6oaHxoar/oRqvofH6Gv+h+qGvrxr6H6r/qqqqqvEf/x/xGhqq/x8fH/+vH6qvHx8f/xEf/6r///////H/qg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile"
+    },
     "level2": {
         "id": "level2",
         "mimeType": "application/mkcd-tilemap",
@@ -68,6 +74,22 @@
             "sprites.dungeon.collectibleRedCrystal"
         ],
         "displayName": "level0"
+    },
+    "level3": {
+        "id": "level3",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzA1MDUwNTA1MDEwMTAzMDMwMzA1MDMwMzAzMDMwMzA1MDUwMzAxMDEwNzAxMDMwNTA1MDMwMzAzMDMwMzAzMDcwNzA3MDcwNzA3MDYwMTA1MDUwMzAzMDMwMzAzMDcwNzA3MDcwNzA3MDYwNjA2MDcwNzAzMDMwMzAzMDMwNTA3MDcwNzA3MDcwNzA3MDcwNzAzMDMwMzAzMDMwMzAzMDMwNTA3MDcwNzA3MDYwNjAzMDMwMzAyMDIwMzAzMDMwMzA3MDcwNjA3MDcwNjA2MDIwMjAyMDIwMzAzMDMwMzAzMDcwNTAxMDYwNTA2MDUwMjAyMDMwMzAzMDMwMzA1MDUwNTAxMDYwNjA2MDIwMjAyMDMwMzAzMDMwMzAzMDUwNTA1MDYwNjA2MDIwNTAyMDIwMjAyMDMwMzAzMDMwMzAzMDMwNTA1MDIwMjAyMDUwNTAyMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMjAyMDIwMzAzMDMwMzAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.builtin.crowd5",
+            "sprites.builtin.crowd8",
+            "sprites.builtin.crowd0",
+            "myTiles.tile1",
+            "sprites.builtin.crowd2",
+            "sprites.builtin.crowd6",
+            "sprites.builtin.crowd7"
+        ],
+        "displayName": "level"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
