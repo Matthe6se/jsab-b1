@@ -18,6 +18,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     controller.moveSprite(cube_in_code, 100, 100)
 })
 mp.onControllerEvent(ControllerEvent.Connected, function (player2) {
+    let mySprite: Sprite = null
     console.log("6.7.8.9.0")
     animation.runMovementAnimation(
     cube_in_code,
@@ -32,12 +33,9 @@ mp.onControllerEvent(ControllerEvent.Connected, function (player2) {
     false
     )
 })
-let mySprite: Sprite = null
 let cube_in_code: Sprite = null
 scene.setBackgroundImage(assets.image`bextru`)
 scene.cameraFollowSprite(cube_in_code)
-mySprite = sprites.create(assets.image`myImage`, SpriteKind.Enemy)
-let mySprite2 = sprites.create(assets.image`myImage1`, SpriteKind.Enemy)
 cube_in_code = sprites.create(assets.image`cube`, SpriteKind.Player)
 let statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 MakeyMakey.setSimulatorKeymap(
