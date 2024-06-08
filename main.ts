@@ -17,27 +17,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     controller.moveSprite(cube_in_code, 100, 100)
 })
-mp.onControllerEvent(ControllerEvent.Connected, function (player2) {
-    let mySprite: Sprite = null
-    console.log("6.7.8.9.0")
-    animation.runMovementAnimation(
-    cube_in_code,
-    animation.animationPresets(animation.flyToCenter),
-    2000,
-    false
-    )
-    animation.runImageAnimation(
-    mySprite,
-    assets.animation`myAnim`,
-    200,
-    false
-    )
-})
 let cube_in_code: Sprite = null
 scene.setBackgroundImage(assets.image`bextru`)
 scene.cameraFollowSprite(cube_in_code)
 cube_in_code = sprites.create(assets.image`cube`, SpriteKind.Player)
-let statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 MakeyMakey.setSimulatorKeymap(
 MakeyMakey.PlayerNumber.ONE,
 MakeyMakey.MakeyMakeyKey.UP,
@@ -56,4 +39,11 @@ MakeyMakey.MakeyMakeyKey.UP,
 MakeyMakey.MakeyMakeyKey.UP,
 MakeyMakey.MakeyMakeyKey.UP
 )
+animation.runMovementAnimation(
+cube_in_code,
+animation.animationPresets(animation.flyToCenter),
+2000,
+true
+)
 music.play(music.createSong(assets.song`092829372839`), music.PlaybackMode.UntilDone)
+console.log("6.7.8.9.0")
